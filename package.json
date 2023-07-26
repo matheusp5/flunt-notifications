@@ -1,0 +1,31 @@
+{
+  "name": "flunt-typescript",
+  "version": "1.0.0",
+  "description": "Flunt is a fluent approach to using the Notification pattern with your TypeScript entities, centralizing all the changes you've made and making them easy to access when needed.",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofmxtheuuz/flunt-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ofmxtheuuz/flunt-typescript/issues"
+  },
+  "homepage": "https://github.com/ofmxtheuuz/flunt-typescript#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.6.1",
+    "node": "^20.5.0",
+    "nodemon": "^3.0.1"
+  }
+}

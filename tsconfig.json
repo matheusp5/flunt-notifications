@@ -1,0 +1,23 @@
+﻿{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@/*": ["./*"],
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
