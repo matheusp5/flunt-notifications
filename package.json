@@ -1,6 +1,8 @@
 {
   "name": "flunt-ts",
   "version": "1.0.0",
+  "main": "dist/src/index.js",
+  "types": "dist/index.d.ts",
   "description": "Flunt is a fluent approach to using the Notification pattern with your TypeScript entities, centralizing all the changes you've made and making them easy to access when needed.",
   "scripts": {
     "build": "npx tsc",
