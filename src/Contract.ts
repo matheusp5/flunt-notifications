@@ -1,6 +1,6 @@
 ﻿import Notification from './Models/Notification';
-import {CompareTypes} from "@src/Enums/CompareTypesEnum";
-import CompareService from "@src/Utils/CompareService";
+import {CompareTypes} from "./Enums/CompareTypesEnum";
+import CompareService from "./Utils/CompareService";
 
 export default class Contract<T = Notification> {
   public _notifications: T[] = [];

@@ -1,4 +1,4 @@
-﻿import { CompareTypes } from '@src/Enums/CompareTypesEnum';
+﻿import { CompareTypes } from '../Enums/CompareTypesEnum';
 
 class CompareService {
   public Compare<T>(value1: T, value2: T, type: CompareTypes) {

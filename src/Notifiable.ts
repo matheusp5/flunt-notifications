@@ -1,5 +1,5 @@
-﻿import Contract from "@src/Contract";
-import Notification from "@src/Models/Notification";
+﻿import Contract from "./Contract";
+import Notification from "./Models/Notification";
 
 export default class Notifiable<T = Notification> {
   public _notification: T[] = []
