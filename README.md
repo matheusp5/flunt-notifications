@@ -3,6 +3,10 @@
 # Flunt
 Flunt is a fluent approach to using the Notification pattern with your TypeScript entities, centralizing all the changes you've made and making them easy to access when needed. It is built on top of the https://github.com/andrebaltieri/Flunt repository and supports generic features. With Flunt, you can easily handle validation notifications, aggregating all relevant information in one place for more efficient handling of your data.
 
+```
+npm i flunt-notifications
+```
+
 ## Models
 When I install some library, I have difficulties in understanding the models/entities. So it was with that in mind that I decided to create this section especially to detail Flunt's main classes.
 
@@ -18,17 +22,11 @@ When I install some library, I have difficulties in understanding the models/ent
   </li>
 </ul>
 
-## How to install
-It's very simple, you just need to install the library with NPM
-```
-npm i flunt-validations
-```
-
 
 ## Examples
 Validating a User with the Default Notification
 ```ts
-import { Notification, Notifiable, Contract } from "flunt-validations";
+import { Notification, Notifiable, Contract } from "flunt-notifications";
 
 class User extends Notifiable { // Class inheriting from "Notifiable"
 
@@ -76,7 +74,7 @@ console.log(user2.getNotifications()) // [] -> nothing, because all fields are v
 Validating a User with a custom Notification
 
 ```ts
-import { Notification, Notifiable, Contract } from "flunt-validations";
+import { Notification, Notifiable, Contract } from "flunt-notifications";
 
 class CustomNotification extends Notification {
   constructor(
