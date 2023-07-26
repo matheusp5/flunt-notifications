@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Flunt is a fluent approach to using the Notification pattern with your TypeScript entities, centralizing all the changes you've made and making them easy to access when needed.",
   "scripts": {
-    "test": ""
+    "format": "prettier --write \\\"src/**/*.ts\\\" \\\"test/**/*.ts\\\"",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
