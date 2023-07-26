@@ -7,7 +7,7 @@ export default class User extends Notifiable {
     super()
     let contract=  new Contract<Notification>()
     contract.minLength(name, 3, new Notification("name", "Name must have more than 3 chars"));
-    contract.isRequired(email, new Notification("email", "E-mail must be valid."));
+    contract.isEmail(email, new Notification("email", "E-mail must be valid."));
     contract.minLength(password, 8, new Notification("password", "Password must have more than 8 chars"));
 
     super.AddNotifications(contract)
