@@ -1,3 +1,11 @@
-﻿export * from "./Contract"
-export * from "./Notifiable";
-export * from "./Models/Notification"
+﻿import Notifiable from './Notifiable';
+import Notification from './Models/Notification';
+import Contract from './Contract';
+import {CompareTypes} from "./Enums/CompareTypesEnum";
+
+export {
+  Notifiable,
+  Notification,
+  Contract,
+  CompareTypes
+};
