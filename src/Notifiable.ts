@@ -1,7 +1,7 @@
 ﻿import Contract from './Contract';
 import Notification from './Models/Notification';
 
-export default class Notifiable<T = Notification> {
+export default abstract class Notifiable<T = Notification> {
   public _notification: T[] = [];
 
   AddNotifications(contract: Contract): void {

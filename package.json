@@ -1,15 +1,31 @@
 {
-  "name": "flunt-typescript",
-  "version": "1.0.0",
-  "main": "dist/src/index.js",
-  "types": "dist/index.d.ts",
+  "name": "flunt-validations",
+  "version": "1.4.1",
+  "main": "dist/src/app.js",
+  "private": false,
+  "types": "dist/src/app.d.ts",
   "description": "Flunt is a fluent approach to using the Notification pattern with your TypeScript entities, centralizing all the changes you've made and making them easy to access when needed.",
   "scripts": {
     "build": "npx tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest"
   },
-  "repository": {
+  "exports": {
+    "./notifiable": {
+      "import": "./dist/src/Notifiable.js",
+      "types": "./dist/src/Notifiable.d.ts"
+    },
+    "./contract": {
+      "import": "./dist/src/Contract.js",
+      "types": "./dist/src/Contract.d.ts"
+    },
+    "./notification": {
+      "import": "./dist/src/Models/Notification.js",
+      "types": "./dist/src/Models/Notification.d.ts"
+    }
+  },
+
+"repository": {
     "type": "git",
     "url": "git+https://github.com/ofmxtheuuz/flunt-typescript.git"
   },
